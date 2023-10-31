@@ -1,0 +1,166 @@
+body.darkTheme  {
+    --primary: thistle;
+    --secondary: purple;
+    background-color: indigo;
+}
+
+body{
+    --primary: thistle;
+    --secondary: snow;
+    background-color: lavenderblush;
+}
+
+@media (prefers-color-scheme: dark) {} /* control the theme if prefers color theme on devise is set to dark */
+
+/* .themeButton{
+    background-color: var(--secondary);
+    border: none;
+    border-radius: .25em;
+    padding: .5em 1em;
+
+    color: var(--primary);
+} */
+
+.switch{
+    display: block;
+    
+    height: 1.2em;
+    width: 2em;
+    background-color: var(--secondary);
+    border-radius: 1.2em;
+
+    position: relative;
+
+    &__slider{
+        height: 1em;
+        width: 1em;
+        border-radius: 50%;
+        background-color: var(--primary);
+        
+        position: absolute;
+        top: .1em;
+        left: .1em;
+    }
+
+    &__checkbox:checked + &__slider {
+        left: auto;
+        right: .1em;
+    }
+
+    &__checkbox{
+        display: none;
+    }
+}
+
+.primaryHeader{
+    background-color: var(--primary);
+
+    .primaryNavigation{
+        display: flex;
+        justify-content: space-between;
+
+        padding: 1em;
+
+        &__logo {
+            color: var(--secondary);
+        }
+
+        &__menu {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+
+            color: var(--secondary);
+            list-style: none;
+        }
+    }
+
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90vh;
+
+    position: relative;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    &__heading{
+        color: var(--primary);
+        font-size: 3em;
+
+        position: absolute;
+
+        transform: translateY(-1.5em);
+    }
+
+    &__button{
+        display: block;
+
+        background-color: var(--primary);
+        border: none;
+        padding: .5em 1em;
+        border-radius: .25em;
+
+        color: var(--secondary);
+
+        position: absolute;
+    }
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    padding: 1em;
+    
+    text-align: center;
+    
+    &__card{
+        flex: 1 1 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        background-color: var(--primary);
+        min-width: 20em;
+        max-width: 40em;
+        padding: 1em;
+        border-radius: .5em;
+    }
+
+    &__image {
+        width: 100%;
+        height: 10em;
+        object-fit: cover;
+    }
+
+    &__text {
+        color: var(--secondary);
+    }
+
+    &__button {
+        background-color: var(--secondary);
+        border: none;
+        padding: .5em 1em;
+        border-radius: .25em;
+
+        color: var(--primary);
+    }
+}
