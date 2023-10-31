@@ -1,3 +1,7 @@
 // import your files here e.g like this: import "./style.scss"
 import "./style.scss"
-import "./images/aubergine-feta.png"
+import "./script/header"
+import "./script/ToDo"
+import "./script/karussel"
+import "./script/strong"
+import "./script/progress"
