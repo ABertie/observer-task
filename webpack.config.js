@@ -16,6 +16,10 @@ module.exports = {
 	new HtmlWebpackPlugin({
 		template: path.resolve(__dirname, "src", "theme.html"),
 		filename: "theme.html"
+	}),
+	new HtmlWebpackPlugin({
+		template: path.resolve(__dirname, "src", "touch.html"),
+		filename: "touch.html"
 	})],
 	module: {
 		rules: [
