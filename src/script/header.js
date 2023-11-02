@@ -25,9 +25,6 @@ export default (function() {
                     HEADER.style.top = "0"
                     SCROLL = window.scrollY
                 }
-
-
-
             })
         }
     }

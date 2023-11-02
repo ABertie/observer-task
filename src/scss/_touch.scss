@@ -2,4 +2,38 @@
     width: 20em;
     height: 20em;
     background-color: thistle;
+    overflow: hidden;
+
+    position: relative;
+    
+    img{
+        width: 90%;
+        height: 90%;
+
+        position: absolute;
+        inset: 5% 0 0 5%;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 70vw;
 }
